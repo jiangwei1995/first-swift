@@ -31,8 +31,8 @@ class GameScene: SKScene {
             spinnyNode.lineWidth = 2.5
             
             spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(M_PI), duration: 1)))
-            spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
-                                              SKAction.fadeOut(withDuration: 0.5),
+            spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 1),
+                                              SKAction.fadeOut(withDuration: 1),
                                               SKAction.removeFromParent()]))
         }
     }
